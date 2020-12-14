@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+body,h1,h2,label,form{
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* ▼ヘッダー */
+header{
+  color: #333;
+  border-bottom:1px solid black ;
+}
+
+.container{
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo{
+  display: block;
+}
+
+.coedo-icon{
+  text-decoration: none;
+  margin-left: 60px;
+  font-size: 30px;
+}
+
+.nav{
+  margin-left: auto;
+}
+
+.nav-lists{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.user-nickname,.logout,.login,.sign-up{
+  margin-right: 40px;
+  text-decoration: none;
+}
+/* ▲ヘッダー */
+
