@@ -4,14 +4,14 @@
   margin-top: 50px;
 }
 
-.login-red-btn {
+.login-gray-btn {
   width: 100%;
-  background: #ea352d;
-  border: 1px solid #ea352d;
-  color: #fff;
+  background: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));;
+  border: 1px solid;
   line-height: 48px;
   font-size: 14px;
   cursor: pointer;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 .login-flash-message {
