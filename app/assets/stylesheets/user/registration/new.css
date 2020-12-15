@@ -90,6 +90,13 @@
   resize: none;
 }
 
+.select-box{
+  font-family: 'Noto Sans JP', sans-serif;
+  height: 48px;
+  border: 1px solid #ccc;
+  padding: 10px 16px 8px;
+}
+
 .info-text {
   color: #888;
   font-size: 15px;
