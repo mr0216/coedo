@@ -49,3 +49,13 @@ header{
 }
 /* ▲ヘッダー */
 
+/* ▼ユーザー詳細ページ */
+.introduction-main {
+  width: 100%;
+  min-width: 800px;
+  height: 100%;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
