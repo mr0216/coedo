@@ -43,14 +43,20 @@ header{
   list-style: none;
 }
 
-.user-nickname,.logout,.login,.sign-up{
+.user-nickname,.new-post,.logout,.login,.sign-up{
   margin-right: 40px;
   text-decoration: none;
 }
 /* ▲ヘッダー */
 
 /* ▼ユーザー詳細ページ */
-.introduction-main {
+.second-coedo-icon{
+  text-decoration: none;
+  margin-left: 60px;
+  font-size: 30px;
+}
+
+.user-show{
   width: 100%;
   min-width: 800px;
   height: 100%;
@@ -58,4 +64,41 @@ header{
   display: flex;
   justify-content: center;
   padding-top: 30px;
+}
+
+.user-box{
+  width: 85%;
+  background-color: white;
+  padding-bottom: 70px;
+}
+.name{
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.user-img-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-box-img{
+  height: 300px;
+  width: 500px;
+  margin-bottom: 40px;
+}
+
+.user-introduction{
+  margin-bottom: 30px;
+  padding: 0 50px;
+}
+
+.detail-tabel{
+  margin: 0px 0px 30px 50px;
+}
+
+.detail-value{
+  padding: 5px;
 }

@@ -11,15 +11,15 @@
 
   <div class="form-group">
     <div class='form-text-wrap'>
-      <label class="form-text">ニックネーム※</label>
+      <label class="form-text">名前※</label>
     </div>
     <%= f.text_area :nickname, class:"input-default", id:"nickname", placeholder:"例) 川越太郎", maxlength:"40" %>
   </div>
   <div class="form-group">
     <div class='form-text-wrap'>
-      <label class="form-text">カテゴリー※</label>
+      <label class="form-text">プロフィール写真</label>
     </div>
-    <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"category"}) %>
+    <%= f.file_field :image, class:"shop-image", id:"shop-image" %>
   </div>
   <div class="form-group">
     <div class='form-text-wrap'>
@@ -41,26 +41,31 @@
     <%= f.password_field :password_confirmation, class:"input-default", id:"password-confirmation", placeholder:"同じパスワードを入力して下さい" %>
   </div>
   <div class="form-group">
-    <p class='form-info-header'>
-      本人確認
-    </p>
-    <p class='form-info-text'>
-      安心・安全にご利用いただくために、お客さまの本人情報の登録にご協力ください。他のお客さまに公開されることはありません。
-    </p>
+    <div class='form-text-wrap'>
+      <label class="form-text">カテゴリー※</label>
+    </div>
+    <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"category"}) %>
   </div>
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text">紹介文※</label>
+    </div>
+    <%= f.text_area :introduction, class:"input-default-introduction", id:"introduction", placeholder:"例) 店舗紹介(300文字まで)",rows:"7" , maxlength:"300" %>
+  </div>
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text">URL</label>
+    </div>
+    <%= f.text_area :url, class:"input-default", id:"url" %>
+  </div>
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text">営業時間・定休日※</label>
+    </div>
+    <%= f.text_area :business_hour, class:"input-default-business_hour", id:"business_hour", placeholder:"例) 営業時間：10:00~18:00 定休日:毎週月曜日" %>
+  </div>
+  
   <%# ▼住所/電話番号登録 %>
-  <div class="form-group">
-    <div class='form-text-wrap'>
-      <label class="form-text">郵便番号※</label>
-    </div>
-    <%= f.text_field :postal_code, class:"input-default", id:"postal-code", placeholder:"例）123-4567", maxlength:"8" %>
-  </div>
-  <div class="form-group">
-    <div class='form-text-wrap'>
-      <label class="form-text">都道府県※</label>
-    </div>
-    <%= f.collection_select(:prefecture_id, Prefecture.all, :id, :name, {}, {class:"select-box", id:"prefecture"}) %>
-  </div>
   <div class="form-group">
     <div class='form-text-wrap'>
       <label class="form-text">市区町村※</label>

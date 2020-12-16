@@ -1,6 +1,5 @@
 class User < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
-  belongs_to :prefecture
   belongs_to :category
   
   devise :database_authenticatable, :registerable,
@@ -8,20 +7,18 @@ class User < ApplicationRecord
 
   with_options presence: true do
     validates :nickname
-    validates :postal_code
     validates :city
     validates :street
     validates :phone_number
+    validates :introduction
+    validates :business_hour
   end
 
   validates :password, presence: true,
                        format: { with: /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i,
                                  message: 'Include both letters and numbers' }
-
-  with_options numericality: { other_than: 1, message: 'Select.' } do
-    validates :prefecture_id
-    validates :category_id
-  end
+  
+  validates :category_id, numericality: { other_than: 1, message: 'Select.' }
 
   has_many :posts
   has_one_attached :image

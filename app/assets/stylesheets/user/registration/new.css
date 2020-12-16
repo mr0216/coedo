@@ -1,5 +1,5 @@
 /* ▼新規登録画面 */
-  body,h1,h2,p,form,label {
+  body,h1,h2,p,form,label,input {
     font-family: 'Noto Sans JP', sans-serif;
   }
 
@@ -8,9 +8,9 @@
   display: flex;
   align-items: center;
 }
-
+/* 
 .second-header{
-}
+} */
 
 .second-coedo-icon{
   text-decoration: none;
@@ -18,7 +18,7 @@
   font-size: 30px;
 }
 
-.registration-main {
+.registration-main{
   width: 100%;
   min-width: 800px;
   height: 100%;
@@ -92,9 +92,23 @@
 
 .select-box{
   font-family: 'Noto Sans JP', sans-serif;
-  height: 48px;
+  height: 40px;
+  margin: 5px;
   border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-default-introduction, .input-default-business_hour{
+  font-family: 'Noto Sans JP', sans-serif;
   padding: 10px 16px 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.shop-image{
+  font-family: 'Noto Sans JP', sans-serif;
+  background: #fff;
 }
 
 .info-text {
