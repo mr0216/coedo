@@ -14,10 +14,7 @@ class User < ApplicationRecord
     validates :business_hour
   end
 
-  validates :password, presence: true,
-                       format: { with: /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i,
-                                 message: 'Include both letters and numbers' }
-  
+  validates :password, presence: true,format: { with: /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i, message: 'Include both letters and numbers' }
   validates :category_id, numericality: { other_than: 1, message: 'Select.' }
 
   has_many :posts
