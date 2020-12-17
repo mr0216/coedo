@@ -1,0 +1,39 @@
+<%= render "shared/second-header"%>
+<%= form_with model: @post, url: posts_path, method: :POST, class: 'new-post-main', local: true do |f| %>
+  <%=render 'shared/error_messages', model: f.object %>
+  <div class='form-wrap'>
+    <div class='form-header'>
+      <h1 class='form-header-text'>
+        新規投稿
+      </h1>
+    </div>
+    <p class="required-item">必須項目※</p>
+    <div class="form-group">
+      <div class='form-text-wrap'>
+        <label class="form-text">title※</label>
+      </div>
+      <%= f.text_area :title, class:"input-default", id:"title" %>
+    </div>
+    <div class="form-group">
+      <div class='form-text-wrap'>
+        <label class="form-text">カテゴリー※</label>
+      </div>
+      <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"category"}) %>
+    </div>
+    <div class="form-group">
+      <div class='form-text-wrap'>
+        <label class="form-text">テキスト※</label>
+      </div>
+      <%= f.text_area :text, class:"input-text", id:"text", placeholder:"例) 投稿記事" %>
+    </div>
+    <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text">画像</label>
+    </div>
+    <%= f.file_field :image, class:"post-image", id:"post-image" %>
+  </div>
+    <div class='post-btn'>
+      <%= f.submit "投稿する" ,class:"post-gray-btn" %>
+    </div>
+  </div>
+<% end %>
