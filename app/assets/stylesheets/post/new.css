@@ -50,3 +50,29 @@
   font-family: 'Noto Sans JP', sans-serif;
   cursor: pointer;
 }
+
+.main{
+  margin: 40px;
+}
+
+.card-main{
+  display: flex;
+}
+
+.card-main-img{
+  align-items: center;
+  margin-right: 50px;
+}
+
+.card-img{
+  width: 300px;
+  height: 300px;
+}
+
+.card-main-topic{
+  width: 400px;
+}
+
+.card__summary{
+  max-width: 100%;
+}

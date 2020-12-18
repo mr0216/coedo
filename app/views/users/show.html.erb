@@ -1,8 +1,4 @@
-<div class=second-container>
-  <div class='second-header'>
-    <%= link_to 'coedo', root_path, class:'second-coedo-icon' %>
-  </div>
-</div>
+<%= render "shared/header" %>
 
 <%# ▼店舗概要 %>
 <div class="user-show">
@@ -33,7 +29,7 @@
           <td class="detail-value"><%= @user.city %><%= @user.street %><%= @user.other_address %></td>
         </tr>
         <tr class="firstChild">
-          <th class="detail-user">URL</th>
+          <th class="detail-user">オフィシャルサイト</th>
           <td class="detail-value"><%= raw Rinku.auto_link(h(@user.url)) %></td>
         </tr>
         <tr class="firstChild">
@@ -42,8 +38,11 @@
         </tr>
       </tbody>
     </table>
-    <div class="user_card">
-      <%= render partial:'posts/post', colection: @user.posts %>
+    <h3 class="card-heading">
+      ニュース
+    </h3>
+    <div class="user__card">
+      <%= render partial:'posts/post', collection: @posts %>
     </div>
   </div>
 </div>

@@ -7,14 +7,13 @@ body{
   padding: 0;
 }
 
-body,h1,h2,label,form{
+body,h1,h2,h3,label,form{
   font-family: 'Noto Sans JP', sans-serif;
 }
 
 /* ▼ヘッダー */
 header{
   color: #333;
-  border-bottom:1px solid black ;
 }
 
 .container{
@@ -66,7 +65,7 @@ header{
   padding-top: 30px;
 }
 
-.user-box{
+.user-box {
   width: 85%;
   background-color: white;
   padding-bottom: 70px;
@@ -101,4 +100,9 @@ header{
 
 .detail-value{
   padding: 5px;
+}
+.card-heading{
+  margin: 0 40px;
+  padding: 0 0 10px 30px;
+  border-bottom: 1px solid #ccc;
 }
