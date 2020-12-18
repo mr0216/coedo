@@ -5,12 +5,18 @@
     </div>
     <div class="card-main-topic">
       <div class="topic-date">
-        <%=l post.created_at %>
+        <%=l post.created_at, format: :short %>
       </div>
       <%= link_to "#{post.title}",post_path(post.id), class: :card__title %>
       <p class="card__summary">
         <%= "#{post.text}" %>
       </p>
+      <div class="post-edit-destroy">
+        <% if user_signed_in? && current_user.id == post.user_id %>
+          <%= link_to '投稿編集', edit_post_path, class: "post-edit" %>
+          <%= link_to '削除', post_path, method: :delete, class:'post-destroy' %>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>

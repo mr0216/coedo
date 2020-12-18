@@ -1,4 +1,4 @@
-<%= render "shared/second-header"%>
+<%= render "shared/header"%>
 <%= form_with model: @post, url: edit_post_path, class: 'new-post-main', local: true do |f| %>
   <%=render 'shared/error_messages', model: f.object %>
   <div class='form-wrap'>
@@ -33,7 +33,7 @@
     <%= f.file_field :image, class:"post-image", id:"post-image" %>
   </div>
     <div class='post-btn'>
-      <%= f.submit "投稿する" ,class:"post-gray-btn" %>
+      <%= f.submit "編集する" ,class:"post-gray-btn" %>
     </div>
   </div>
 <% end %>

@@ -13,13 +13,22 @@ body,h1,h2,h3,label,form{
 
 /* ▼ヘッダー */
 header{
-  color: #333;
+  position:fixed;
+  top:0px;
+  z-index:10;
+}
+
+.top-image{
+  padding: 30px 0 100px 0;
+  width: 100%;
 }
 
 .container{
+  width: 100vw;
   height: 60px;
   display: flex;
   align-items: center;
+  background-color:#f5f5f5;
 }
 
 .header-logo{
@@ -43,9 +52,16 @@ header{
 }
 
 .user-nickname,.new-post,.logout,.login,.sign-up{
+  justify-content: flex-end;
+  padding: 0px 0px 0px 25px;
   margin-right: 40px;
   text-decoration: none;
 }
+
+.user-nickname:hover,.new-post:hover,.logout:hover,.login:hover,.sign-up:hover{
+  opacity: 0.5;
+}
+
 /* ▲ヘッダー */
 
 /* ▼ユーザー詳細ページ */
@@ -56,6 +72,7 @@ header{
 }
 
 .user-show{
+  margin-top: 20px;
   width: 100%;
   min-width: 800px;
   height: 100%;

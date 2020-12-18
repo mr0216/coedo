@@ -51,6 +51,7 @@
   cursor: pointer;
 }
 
+/* ▼ユーザー詳細投稿一覧 */
 .main{
   margin: 40px;
 }
@@ -58,7 +59,6 @@
 .card-main{
   display: flex;
 }
-
 .card-main-img{
   align-items: center;
   margin-right: 50px;
@@ -75,4 +75,18 @@
 
 .card__summary{
   max-width: 100%;
+  word-break: break-all;
 }
+
+.post-edit-destroy{
+  display: flex;
+  justify-content: space-between;  
+}
+
+.post-edit:hover{
+  opacity: 0.5;
+}
+.post-destroy:hover{
+  color: #ff0000;
+}
+/* ▲ユーザー詳細投稿一覧 */
