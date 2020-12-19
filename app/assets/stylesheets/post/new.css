@@ -1,0 +1,92 @@
+.new-post-main{
+  width: 100%;
+  min-width: 800px;
+  height: 100%;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.input-text {
+  font-family: 'Noto Sans JP', sans-serif;
+  width: 100%;
+  margin-top: 5px;
+  height: 48px;
+  padding: 10px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-size: 14px;
+  resize: none;
+}
+
+.input-text{
+  font-family: 'Noto Sans JP', sans-serif;
+  padding: 10px 16px 8px;
+  height: 150px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.post-image{
+  font-family: 'Noto Sans JP', sans-serif;
+  background: #fff;
+  margin-bottom: 60px;
+}
+
+.post-btn {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.post-gray-btn {
+  width: 100%;
+  background: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+  border: 1px solid;
+  line-height: 48px;
+  font-size: 14px;
+  font-family: 'Noto Sans JP', sans-serif;
+  cursor: pointer;
+}
+
+/* ▼ユーザー詳細投稿一覧 */
+.main{
+  margin: 40px;
+}
+
+.card-main{
+  display: flex;
+}
+.card-main-img{
+  align-items: center;
+  margin-right: 50px;
+}
+
+.card-img{
+  width: 300px;
+  height: 300px;
+}
+
+.card-main-topic{
+  width: 400px;
+}
+
+.card__summary{
+  max-width: 100%;
+  word-break: break-all;
+}
+
+.post-edit-destroy{
+  display: flex;
+  justify-content: space-between;  
+}
+
+.post-edit:hover{
+  opacity: 0.5;
+}
+.post-destroy:hover{
+  color: #ff0000;
+}
+/* ▲ユーザー詳細投稿一覧 */

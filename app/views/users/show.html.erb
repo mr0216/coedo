@@ -1,0 +1,49 @@
+<%= render "shared/header" %>
+
+<%# ▼店舗概要 %>
+<div class="user-show">
+  <div class="user-box">
+    <h2 class ="name">
+      <%= @user.nickname%>
+    </h2>
+    <div class="user-img-content">
+      <%= image_tag @user.image,class:"user-box-img"%>
+    </div>
+
+    <div class="user-introduction">
+      <p class="introduction-detail"><%= @user.introduction %></p>
+    </div>
+
+    <table class="detail-tabel">
+      <tbody class="fistChild-lastChild">
+        <tr class="firstChild">
+          <th class="detail-user">カテゴリー</th>
+          <td class="detail-value"><%= @user.category.name %></td>
+        </tr>
+        <tr class="firstChild">
+          <th class="detail-user">TEL</th>
+          <td class="detail-value"><%= @user.phone_number %></td>
+        </tr>
+        <tr class="firstChild">
+          <th class="detail-user">住所</th>
+          <td class="detail-value"><%= @user.city %><%= @user.street %><%= @user.other_address %></td>
+        </tr>
+        <tr class="firstChild">
+          <th class="detail-user">オフィシャルサイト</th>
+          <td class="detail-value"><%= raw Rinku.auto_link(h(@user.url)) %></td>
+        </tr>
+        <tr class="firstChild">
+          <th class="detail-user">営業時間・定休日</th>
+          <td class="detail-value"><%= @user.business_hour %></td>
+        </tr>
+      </tbody>
+    </table>
+    <h3 class="card-heading">
+      ニュース
+    </h3>
+    <div class="user__card">
+      <%= render partial:'posts/post', collection: @posts %>
+    </div>
+  </div>
+</div>
+<%# ▲店舗概要 %>

@@ -1,0 +1,18 @@
+<div class="main">
+  <div class="inner">
+    <div class="topic-section-img">
+      <%= image_tag @post.image %>
+    </div>
+    <div class="topic-section-text">
+      <div class="topic-date">
+        <%= l @post.created_at %>
+      </div>
+      <div class="topic-title">
+        <%= @post.title%>
+      </div>
+      <div class="topic-text">
+        <%= @post.text %>
+      </div>
+    </div>
+  </div>
+</div>

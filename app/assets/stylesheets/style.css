@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+body,h1,h2,h3,label,form{
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* ▼ヘッダー */
+header{
+  position:fixed;
+  top:0px;
+  z-index:10;
+}
+
+.container{
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color:#f5f5f5;
+}
+
+.header-logo{
+  display: block;
+}
+
+.coedo-icon{
+  text-decoration: none;
+  margin-left: 60px;
+  font-size: 30px;
+}
+
+.nav{
+  margin-left: auto;
+}
+
+.nav-lists{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.user-nickname,.new-post,.logout,.login,.sign-up{
+  justify-content: flex-end;
+  padding: 0px 0px 0px 25px;
+  margin-right: 40px;
+  text-decoration: none;
+}
+
+.user-nickname:hover,.new-post:hover,.logout:hover,.login:hover,.sign-up:hover{
+  opacity: 0.5;
+}
+
+/* ▲ヘッダー */
+
+/* ▼posts/index */
+.top-image{
+  padding: 30px 0 100px 0;
+  width: 100%;
+  height: 550px;
+}
+/* ▲posts/index */
+
+/* ▼ユーザー詳細ページ */
+.second-coedo-icon{
+  text-decoration: none;
+  margin-left: 60px;
+  font-size: 30px;
+}
+
+.user-show{
+  margin-top: 20px;
+  width: 100%;
+  min-width: 800px;
+  height: 100%;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.user-box {
+  width: 85%;
+  background-color: white;
+  padding-bottom: 70px;
+}
+.name{
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.user-img-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-box-img{
+  height: 300px;
+  width: 500px;
+  margin-bottom: 40px;
+}
+
+.user-introduction{
+  margin-bottom: 30px;
+  padding: 0 50px;
+}
+
+.detail-tabel{
+  margin: 0px 0px 30px 50px;
+}
+
+.detail-value{
+  padding: 5px;
+}
+.card-heading{
+  margin: 0 40px;
+  padding: 0 0 10px 30px;
+  border-bottom: 1px solid #ccc;
+}

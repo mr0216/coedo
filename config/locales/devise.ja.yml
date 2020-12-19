@@ -1,0 +1,14 @@
+ja:
+ activerecord:
+   attributes:
+     user:
+       nickname: ニックネーム
+       city: 市区町村
+       street: 番地
+       Phone number: 電話番号
+       Business hour: 営業時間
+       Category : カテゴリー
+       image: 画像
+     post:
+       text: テキスト
+       image: 画像
