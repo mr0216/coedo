@@ -1,12 +1,46 @@
-<%= render "shared/header" %>
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <%= render "shared/header" %>
+    </header>
 
-<div class="main-page">
-  <div class="top-image">
-    <%= image_tag "mainimage.png", class:"top-image-one" %>
-  </div>
-  <div class="">
-  </div>
-</div>
+    <div class="top-wrapper">
+      <div class ="main-container">
+        <h1>お気に入りのcoedoを見つけよう。</h1>
+      </div>
+    </div>
 
-<footer>
-</footer>
+    <div class="topic-wrapper">
+      <div class="topic-container">
+        <div class="heading">
+          <h1>TOPICS</h1>
+        </div>
+        <div class="topics-list">
+          <ul class="topics">
+            <% @post.each do |post|%>
+              <li class='list'>
+              <%=link_to post_path(post.id) do%>
+                <div class="post-img-content">
+                  <%=image_tag post.image, class: "post-img" %>
+                </div>
+                <div class="post-time">
+                  <%=l post.created_at, format: :short%>
+                </div>
+                <div class="post-title-content">
+                  <h3 class="post-title">
+                    <%=post.title%>
+                  </h3>
+                </div>
+              <% end %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="message-wrapper">
+      <h1>hoge</h1>
+    </div>
+  </body>
+</html>

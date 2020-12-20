@@ -1,7 +1,10 @@
 class Post < ApplicationRecord
-  validates :title, presence: true
-  validates :text, presence: true
-  validates :category_id, numericality: { other_than: 1, message: 'Select.' }
+  with_options presence: true do
+    validates :title
+    validates :text
+    validates :image
+  end
+  validates :category_id, numericality: { other_than: 1, message: 'を選択してください' }
 
   belongs_to :user
   has_one_attached :image
