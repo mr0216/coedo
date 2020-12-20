@@ -1,19 +1,30 @@
 <%= render "shared/header" %>
 <div class="main">
+  <div class="close-btn">
+    <%= link_to image_tag("back-btn.png", class:"close_btn"), :back %>
+  </div>
   <div class="inner">
+    <div class="topic-date">
+      <%= l @post.created_at, format: :short %>
+    </div>
+    <div class="topic-title">
+      <%= @post.title%>
+    </div>
     <div class="topic-section-img">
-      <%= image_tag @post.image %>
+      <div class="img-block">
+        <%= image_tag @post.image,class:"topic-img" %>
+      </div>
     </div>
     <div class="topic-section-text">
-      <div class="topic-date">
-        <%= l @post.created_at %>
-      </div>
-      <div class="topic-title">
-        <%= @post.title%>
-      </div>
       <div class="topic-text">
         <%= @post.text %>
       </div>
     </div>
+    <div class="post-edit-destroy">
+        <% if user_signed_in? && current_user.id == @post.user_id %>
+          <%= link_to '投稿編集', edit_post_path, class: "post-edit" %>
+          <%= link_to '削除', post_path, method: :delete, class:'post-destroy' %>
+        <% end %>
+      </div>
   </div>
 </div>

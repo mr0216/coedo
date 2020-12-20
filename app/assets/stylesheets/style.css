@@ -138,13 +138,9 @@ header{
   margin: 0;
   padding: 0;
   text-align: center;
+  font-size: 15px;
 }
 
-footer{
-  height: 120px;
-  padding-top: 2px;
-  background-color:#f5f5f5;
-}
 /* @media screen and (max-width: 960px)
 .topics-list ul li {
   display: block;
@@ -158,18 +154,13 @@ footer{
 /* ▲posts/index */
 
 /* ▼ユーザー詳細ページ */
-.second-coedo-icon{
-  text-decoration: none;
-  margin-left: 60px;
-  font-size: 30px;
-}
 
 .user-show{
-  margin-top: 20px;
+  margin-top: 5px;
   width: 100%;
   min-width: 800px;
   height: 100%;
-  background-color: #f5f5f5;
+  background-color: white;
   display: flex;
   justify-content: center;
   padding-top: 30px;
@@ -178,7 +169,7 @@ footer{
 .user-box {
   width: 85%;
   background-color: white;
-  padding-bottom: 70px;
+  padding-bottom: 20px;
 }
 .name{
   width: 100%;
@@ -216,6 +207,88 @@ footer{
   padding: 0 0 10px 30px;
   border-bottom: 1px solid #ccc;
 }
+
+/* ▲ユーザー詳細ページ */
+
+/* ▼投稿詳細ページ */
+.main{
+  position: relative;
+  width: 100%;
+  max-width: 1720px;
+  margin: 30px auto 0 auto;
+  background-color: white;
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+
+.close-btn{
+  position: absolute;
+  top: 30px;
+  right: 5%;
+  z-index: 10;
+}
+
+.close_btn{
+  margin-top: 20px;
+  width: 50px;
+  height: 50px;
+  color: #333;
+  text-decoration: none;
+  background-color: white;
+}
+
+
+
+.inner{
+  background-color: white;
+  margin: 0 auto;
+  position: relative;
+  /* overflow: hidden; */
+  margin-top: -10px;
+  min-height: 300px;
+  padding: 50px 5%;
+  text-align: left;
+  line-height: 1.8em;
+  padding-bottom: 70px;
+}
+
+.topic-date{
+  font-size: 1.2em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  padding: 0 0 0.2em 0;
+}
+
+.topic-title{
+  width: 100%;
+  border-bottom: 1px solid #000;
+  text-align: left;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.img-block{
+  /* padding: 0; */
+  /* margin: 0; */
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
+
+.topic-img{
+  max-width: 40%;
+  max-height: 40%;
+  border: none;
+}
+
+.topic-section-text{
+  margin-bottom: 40px;
+}
+
+/* ▲投稿詳細ページ */
 
 /* ▼フッター */
 .footer {
