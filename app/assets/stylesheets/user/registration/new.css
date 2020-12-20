@@ -3,21 +3,6 @@
     font-family: 'Noto Sans JP', sans-serif;
   }
 
-.second-container{
-  height: 60px;
-  display: flex;
-  align-items: center;
-}
-/* 
-.second-header{
-} */
-
-.second-coedo-icon{
-  text-decoration: none;
-  margin-left: 60px;
-  font-size: 30px;
-}
-
 .registration-main {
   width: 100%;
   min-width: 800px;
