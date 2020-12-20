@@ -142,7 +142,10 @@ ja:
       not_saved:
         one: エラーが発生したため %{resource} は保存されませんでした。
         other: "%{count} 件のエラーが発生したため %{resource} は保存されませんでした。"
-  time:
-    formats:
-      default: "%Y/%m/%d %H:%M:%S"
-      short: "%m/%d %H:%M"
+    time:
+      formats:
+        default: "%Y/%m/%d %H:%M:%S"
+        short: "%m/%d %H:%M"
+    posts:
+      Title: タイトル
+      Category: カテゴリー

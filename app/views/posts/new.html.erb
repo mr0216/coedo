@@ -1,6 +1,5 @@
 <%= render "shared/header"%>
 <%= form_with model: @post, url: posts_path, method: :POST, class: 'new-post-main', local: true do |f| %>
-  <%=render 'shared/error_messages', model: f.object %>
   <div class='form-wrap'>
     <div class='form-header'>
       <h1 class='form-header-text'>
@@ -8,6 +7,7 @@
       </h1>
     </div>
     <p class="required-item">必須項目※</p>
+    <%=render 'shared/error_messages', model: f.object %>
     <div class="form-group">
       <div class='form-text-wrap'>
         <label class="form-text">title※</label>
@@ -28,7 +28,7 @@
     </div>
     <div class="form-group">
     <div class='form-text-wrap'>
-      <label class="form-text">画像</label>
+      <label class="form-text">画像※</label>
     </div>
     <%= f.file_field :image, class:"post-image", id:"post-image" %>
   </div>

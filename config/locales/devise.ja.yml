@@ -7,8 +7,10 @@ ja:
        street: 番地
        Phone number: 電話番号
        Business hour: 営業時間
-       Category : カテゴリー
+       Category: カテゴリー
        image: 画像
      post:
+       Title: タイトル
+       Category: カテゴリー
        text: テキスト
        image: 画像
