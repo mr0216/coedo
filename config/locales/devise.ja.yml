@@ -3,8 +3,7 @@ ja:
    attributes:
      user:
        nickname: ニックネーム
-       city: 市区町村
-       street: 番地
+       address: 住所
        Phone number: 電話番号
        Business hour: 営業時間
        Category: カテゴリー

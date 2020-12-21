@@ -18,10 +18,6 @@ RSpec.describe User,type: :model  do
         @user.url = ""
         expect(@user).to be_valid
       end
-      it "建物名がなくても登録できる" do
-        @user.other_address =''
-        expect(@user).to be_valid
-      end
     end
     context "ユーザー登録ができないとき" do
       it "nicknameが空では登録できない" do
@@ -87,15 +83,10 @@ RSpec.describe User,type: :model  do
         @user.valid?
         expect(@user.errors.full_messages).to include("Business hourを入力してください")
       end
-      it "市区町村が空では登録されない" do
-        @user.city = ""
+      it "住所が空では登録されない" do
+        @user.address = ""
         @user.valid?
-        expect(@user.errors.full_messages).to include("市区町村を入力してください")
-      end
-      it "番地が空では登録できない" do
-        @user.street = ""
-        @user.valid?
-        expect(@user.errors.full_messages).to include("番地を入力してください")
+        expect(@user.errors.full_messages).to include("住所を入力してください")
       end
       it "電話番号が空では登録できない" do
         @user.phone_number = ""

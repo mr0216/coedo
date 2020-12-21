@@ -68,21 +68,9 @@
   <%# ▼住所/電話番号登録 %>
   <div class="form-group">
     <div class='form-text-wrap'>
-      <label class="form-text">市区町村※</label>
+      <label class="form-text">住所※</label>
     </div>
-    <%= f.text_field :city, class:"input-default", id:"city", placeholder:"例）川越市"%>
-  </div>
-  <div class="form-group">
-    <div class='form-text-wrap'>
-      <label class="form-text">番地※</label>
-    </div>
-    <%= f.text_field :street, class:"input-default", id:"street", placeholder:"例）脇田本町1-1-1"%>
-  </div>
-  <div class="form-group">
-    <div class='form-text-wrap'>
-      <label class="form-text">建物名</label>
-    </div>
-    <%= f.text_field :other_address, class:"input-default", id:"other_address", placeholder:"例）柳ビル103"%>
+    <%= f.text_field :address, class:"input-default", id:"address", placeholder:"埼玉県川越市○○町"%>
   </div>
   <div class="form-group">
     <div class='form-text-wrap'>

@@ -13,31 +13,35 @@
     <div class="user-introduction">
       <p class="introduction-detail"><%= @user.introduction %></p>
     </div>
-
-    <table class="detail-tabel">
-      <tbody class="fistChild-lastChild">
-        <tr class="firstChild">
-          <th class="detail-user">カテゴリー</th>
-          <td class="detail-value"><%= @user.category.name %></td>
-        </tr>
-        <tr class="firstChild">
-          <th class="detail-user">TEL</th>
-          <td class="detail-value"><%= @user.phone_number %></td>
-        </tr>
-        <tr class="firstChild">
-          <th class="detail-user">住所</th>
-          <td class="detail-value"><%= @user.city %><%= @user.street %><%= @user.other_address %></td>
-        </tr>
-        <tr class="firstChild">
-          <th class="detail-user">オフィシャルサイト</th>
-          <td class="detail-value"><%= raw Rinku.auto_link(h(@user.url)) %></td>
-        </tr>
-        <tr class="firstChild">
-          <th class="detail-user">営業時間・定休日</th>
-          <td class="detail-value"><%= @user.business_hour %></td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="user-info">
+      <table class="detail-tabel">
+        <tbody class="fistChild-lastChild">
+          <tr class="firstChild">
+            <th class="detail-user">カテゴリー</th>
+            <td class="detail-value"><%= @user.category.name %></td>
+          </tr>
+          <tr class="firstChild">
+            <th class="detail-user">TEL</th>
+            <td class="detail-value"><%= @user.phone_number %></td>
+          </tr>
+          <tr class="firstChild">
+            <th class="detail-user">住所</th>
+            <td class="detail-value"><%= @user.address %></td>
+          </tr>
+          <tr class="firstChild">
+            <th class="detail-user">オフィシャルサイト</th>
+            <td class="detail-value"><%= raw Rinku.auto_link(h(@user.url)) %></td>
+          </tr>
+          <tr class="firstChild">
+            <th class="detail-user">営業時間・定休日</th>
+            <td class="detail-value"><%= @user.business_hour %></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="map">
+        <%= render partial: "map", locals: { user: @user } %>
+      </div>
+    </div>
     <h3 class="card-heading">
       ニュース
     </h3>
