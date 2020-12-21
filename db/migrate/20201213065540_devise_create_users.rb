@@ -11,9 +11,9 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
       t.text    :introduction
       t.text    :url
       t.text    :business_hour     , null: false
-      t.string  :city              , null: false, default: ""
-      t.string  :street            , null: false, default: ""
-      t.string  :other_address     , default: ""
+      t.string  :address           , null: false
+      t.float   :latitude
+      t.float   :longitude
       t.string  :phone_number      , null: false, default: ""
 
       ## Recoverable

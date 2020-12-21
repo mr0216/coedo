@@ -51,9 +51,9 @@ ActiveRecord::Schema.define(version: 2020_12_15_070833) do
     t.text "introduction"
     t.text "url"
     t.text "business_hour", null: false
-    t.string "city", default: "", null: false
-    t.string "street", default: "", null: false
-    t.string "other_address", default: ""
+    t.string "address", null: false
+    t.float "latitude"
+    t.float "longitude"
     t.string "phone_number", default: "", null: false
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"

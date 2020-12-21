@@ -73,6 +73,11 @@
   width: 400px;
 }
 
+.card__title{
+  font-size: 20px;
+}
+
+
 .card__summary{
   max-width: 100%;
   word-break: break-all;
