@@ -52,8 +52,8 @@
 }
 
 /* ▼ユーザー詳細投稿一覧 */
-.main{
-  margin: 40px;
+.user-post{
+  margin: 50px;
 }
 
 .card-main{
@@ -80,7 +80,10 @@
 
 .post-edit-destroy{
   display: flex;
-  justify-content: space-between;  
+}
+
+.post-edit{
+  padding-right: 15px;
 }
 
 .post-edit:hover{
