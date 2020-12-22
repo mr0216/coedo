@@ -1,0 +1,21 @@
+<%= render "shared/header" %>
+<div class="main-users-index">
+  <div class="users-container">
+    <h3 class="users-heading">coedoの専門店一覧</h3>
+    <% @users.each do |user|%>
+      <div class="users-index-item">
+        <div class="user-left">
+          <%= image_tag user.image,class:"user-index-img" %>
+        </div>
+        <div class="user-right">
+          <div class="user-right-name">
+            <%= link_to "#{user.nickname}", user_path(user.id) %>
+          </div>
+          <div class="user-right-introduction">
+            <%= user.introduction%>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

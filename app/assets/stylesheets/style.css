@@ -46,14 +46,14 @@ header{
   list-style: none;
 }
 
-.user-nickname,.new-post,.logout,.login,.sign-up{
+.user-nickname,.new-post,.logout,.login,.sign-up,.users-index{
   justify-content: flex-end;
   padding: 0px 0px 0px 25px;
   margin-right: 40px;
   text-decoration: none;
 }
 
-.user-nickname:hover,.new-post:hover,.logout:hover,.login:hover,.sign-up:hover{
+.user-nickname:hover,.new-post:hover,.logout:hover,.login:hover,.sign-up:hover,.users-index:hover{
   opacity: 0.5;
 }
 
@@ -155,7 +155,7 @@ header{
 
 /* ▼ユーザー詳細ページ */
 
-.user-show{
+.user-show, .main-users-index{
   margin-top: 5px;
   width: 100%;
   min-width: 800px;
@@ -166,7 +166,7 @@ header{
   padding-top: 30px;
 }
 
-.user-box {
+.user-box, .users-container{
   width: 85%;
   background-color: white;
   padding-bottom: 20px;
@@ -198,9 +198,7 @@ header{
 
 .user-info{
   display:flex;
-  /* align-items: center; */
-  /* text-align: center; */
-  width: 80%;
+  padding: 10px 40px;
 }
 
 .detail-tabel{
@@ -211,8 +209,7 @@ header{
 }
 
 .detail-user{
-  margin: 20px;
-  padding-right: 20px;
+  width: 100%;
 }
 
 .detail-value{
@@ -223,7 +220,7 @@ header{
   width: 100%;
   height: 100%;
   text-align: center;
-  padding-left: 90px;
+  padding-left: 120px;
 }
 
 .card-heading{
@@ -312,7 +309,51 @@ header{
   margin-bottom: 40px;
 }
 
+.topic-text{
+  word-break: break-all;
+}
+
 /* ▲投稿詳細ページ */
+
+/* ▼ユーザー一覧ページ */
+
+.main-users-index{
+padding-top: 60px;
+}
+
+.user-index-img{
+  height: 300px;
+  width: 500px;
+  padding: 0 5% 0 0;
+}
+
+.users-index-item{
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.user-right{
+  line-height: 1.7em;
+  padding-top: 1em;
+}
+
+.user-right-name{
+  width: 80%;
+  font-size: 1.5em;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.user-right-name:hover{
+  opacity: 0.5;
+}
+
+.user-right-introduction{
+  padding-top: 15px;
+  width: 80%;
+}
+/* ▲ユーザー一覧ぺージ */
 
 /* ▼フッター */
 .footer {
