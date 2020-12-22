@@ -11,6 +11,25 @@ body,h1,h2,h3,label,form{
   font-family: 'Noto Sans JP', sans-serif;
 }
 
+.pagination{
+  margin: 0 auto;
+  width: max-content;
+  padding-top: 50px;
+}
+
+.active_page {
+  font-weight: bold;
+  color: #f00;
+}
+
+.page,.next,.last,.prev{
+  padding: 10px 10px;
+}
+
+.page:hover,.next:hover,.last:hover.prev:hover{
+  opacity: 0.5;
+}
+
 /* ▼ヘッダー */
 header{
   position:fixed;
@@ -37,7 +56,13 @@ header{
 }
 
 .nav{
-  margin-left: auto;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search-form{
+  margin: 20px 0;
 }
 
 .nav-lists{
@@ -191,18 +216,25 @@ header{
 .user-box-img{
   height: 300px;
   width: 500px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .user-introduction{
+  margin: 0 auto;
   margin-bottom: 30px;
   padding: 0 50px;
-  border-bottom: 1px solid #ccc;
+  display: table;
+}
+
+.introduction-detail{
+  display: inline-block;
+  text-align: left;
 }
 
 .user-info{
+  border-top: 1px solid #ccc;
   display:flex;
-  padding: 10px;
+  padding: 25px 10px 10px 10px;
 }
 
 .detail-tabel{
@@ -291,9 +323,22 @@ header{
   margin-bottom: 1em;
 }
 
+.topic-main{
+  text-align: center;
+}
+
+.topic_user{
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.topic-section-img{
+  text-align: center;
+}
+
+
 .img-block{
-  /* padding: 0; */
-  /* margin: 0; */
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -309,9 +354,12 @@ header{
 
 .topic-section-text{
   margin-bottom: 40px;
+  margin: 0 auto;
+  display: table;
 }
 
 .topic-text{
+  text-align: left;
   word-break: break-all;
 }
 

@@ -44,7 +44,6 @@ class PostsController < ApplicationController
       render root_path
     end
   end
-
   private
 
   def set_post
