@@ -7,6 +7,7 @@ class PostsController < ApplicationController
     @posts = Post.all
     @posts = Post.includes(:user)
     @post = Post.order('created_at DESC')
+    @posts = Post.page(params[:page]).per(8)
   end
 
   def new

@@ -108,6 +108,10 @@ header{
   clear: both;
 }
 
+.topics li:hover{
+  opacity: 0.7;
+}
+
 .list{
   float: left;
   width: 22%;
@@ -198,7 +202,7 @@ header{
 
 .user-info{
   display:flex;
-  padding: 10px 40px;
+  padding: 10px;
 }
 
 .detail-tabel{
@@ -209,7 +213,7 @@ header{
 }
 
 .detail-user{
-  width: 100%;
+  width: 30%;
 }
 
 .detail-value{
@@ -257,8 +261,6 @@ header{
   text-decoration: none;
   background-color: white;
 }
-
-
 
 .inner{
   background-color: white;

@@ -77,6 +77,10 @@
   font-size: 20px;
 }
 
+.card__title:hover{
+  opacity: 0.5;
+}
+
 
 .card__summary{
   max-width: 100%;
