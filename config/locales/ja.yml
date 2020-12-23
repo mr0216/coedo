@@ -148,4 +148,4 @@ ja:
         short: "%m/%d %H:%M"
     posts:
       Title: タイトル
-      Category: カテゴリー
+      Category_id: カテゴリー
