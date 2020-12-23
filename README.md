@@ -49,7 +49,8 @@ https://user-images.githubusercontent.com/73771836/102981456-4f961900-454c-11eb-
 |検索機能|目的の店舗の検索を行うため|ユーザー詳細画面ににてキーワードを入力し、検索結果が表示される|「店舗一覧画面」に進み、検索窓にキーワードを入力し、検索を実行する|
 
 ## データベース設計
-https://gyazo.com/ac10134dacda9246add80fd9e9353d75
+
+<img width="662" alt="スクリーンショット 2020-12-23 20 32 49" src="https://user-images.githubusercontent.com/73771836/102992234-31d1af80-455e-11eb-88fa-95e47a4340f1.png">
 
 # テーブル設計
 
