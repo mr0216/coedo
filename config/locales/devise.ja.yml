@@ -10,6 +10,6 @@ ja:
        image: 画像
      post:
        Title: タイトル
-       Category: カテゴリー
+       Category_id: カテゴリー
        text: テキスト
        image: 画像

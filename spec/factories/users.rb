@@ -5,7 +5,7 @@ FactoryBot.define do
     password              { 'a00000' }
     password_confirmation { password }
     category_id           { 2 }
-    address               { "hoge"}
+    address               { "埼玉県川越市脇田町24−９"}
     phone_number          { '09012345678' }
     introduction          { Faker::Lorem.sentence} 
     url                   { 'http://localhost:3000/' }
