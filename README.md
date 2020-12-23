@@ -10,7 +10,7 @@
 https://coedo-31996.herokuapp.com/
 
 ## テスト用アカウント
-+ メールアドレス sample@.com
++ メールアドレス sample@a.com
 + パスワード a12345
 + Basic認証
 + ID admin
