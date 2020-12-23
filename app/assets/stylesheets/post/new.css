@@ -51,7 +51,7 @@
   cursor: pointer;
 }
 
-/* ▼ユーザー詳細投稿一覧 */
+/* ▼ユーザー詳細下投稿一覧 */
 .user-post{
   margin: 50px;
 }
@@ -75,6 +75,10 @@
 
 .card__title{
   font-size: 20px;
+}
+
+.card__title:hover{
+  opacity: 0.5;
 }
 
 

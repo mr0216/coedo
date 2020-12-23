@@ -11,23 +11,24 @@
       <%= @post.title%>
     </div>
 
-    <%= link_to "#{@post.user.nickname}", user_path(@post.user.id), class: :topic_user %>
-
-    <div class="topic-section-img">
-      <div class="img-block">
-        <%= image_tag @post.image,class:"topic-img" %>
+    <div class="topic-main">
+      <%= link_to "#{@post.user.nickname}", user_path(@post.user.id), class: :topic_user %>
+      <div class="topic-section-img">
+        <div class="img-block">
+          <%= image_tag @post.image,class:"topic-img" %>
+        </div>
       </div>
-    </div>
-    <div class="topic-section-text">
-      <div class="topic-text">
-        <%= @post.text %>
+      <div class="topic-section-text">
+        <div class="topic-text">
+          <%= simple_format(@post.text) %>
+        </div>
       </div>
-    </div>
-    <div class="post-edit-destroy">
+      <div class="post-edit-destroy">
         <% if user_signed_in? && current_user.id == @post.user_id %>
           <%= link_to '投稿編集', edit_post_path, class: "post-edit" %>
           <%= link_to '削除', post_path, method: :delete, class:'post-destroy' %>
         <% end %>
       </div>
+    </div>
   </div>
 </div>

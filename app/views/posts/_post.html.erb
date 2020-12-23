@@ -9,7 +9,7 @@
       </div>
       <%= link_to "#{post.title}",post_path(post.id), class: :card__title %>
       <p class="card__summary">
-        <%= "#{post.text}" %>
+        <%= simple_format"#{post.text}" %>
       </p>
       <div class="post-edit-destroy">
         <% if user_signed_in? && current_user.id == post.user_id %>

@@ -11,7 +11,7 @@
     </div>
 
     <div class="user-introduction">
-      <p class="introduction-detail"><%= @user.introduction %></p>
+      <p class="introduction-detail"><%= simple_format(@user.introduction) %></p>
     </div>
     <div class="user-info">
       <table class="detail-tabel">
