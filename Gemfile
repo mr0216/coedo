@@ -66,3 +66,4 @@ gem 'geocoder'
 gem 'dotenv-rails'
 gem 'config'
 gem 'kaminari'
+gem "aws-sdk-s3", require: false
