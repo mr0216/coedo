@@ -50,8 +50,7 @@ https://user-images.githubusercontent.com/73771836/102981456-4f961900-454c-11eb-
 
 ## データベース設計
 
-<img width="662" alt="スクリーンショット 2020-12-23 20 32 49" src="https://user-images.githubusercontent.com/73771836/102992234-31d1af80-455e-11eb-88fa-95e47a4340f1.png">
-
+![coedo](https://user-images.githubusercontent.com/73771836/103068745-2e433480-4601-11eb-8253-f3dba43f2c74.png)
 # テーブル設計
 
 ## usersテーブル
