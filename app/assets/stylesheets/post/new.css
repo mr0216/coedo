@@ -61,7 +61,7 @@
 }
 .card-main-img{
   align-items: center;
-  margin-right: 50px;
+  margin: 30px 50px 0 0;
 }
 
 .card-img{
@@ -70,7 +70,7 @@
 }
 
 .card-main-topic{
-  width: 400px;
+  width: 600px;
 }
 
 .card__title{
