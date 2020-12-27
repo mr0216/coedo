@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: coedo_production
-  username: coedo
-  password: <%= ENV['COEDO_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
