@@ -87,7 +87,7 @@ header{
 /* ▼posts/index */
 .top-wrapper{
   padding: 180px 0 100px 0;
-  background-image: image-url("mainimage3.jpg");
+  background-image: url("mainimage3.png");
   background-size:cover;
   color: white;
   text-align:center;
