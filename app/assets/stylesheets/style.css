@@ -26,7 +26,7 @@ body,h1,h2,h3,label,form{
   padding: 10px 10px;
 }
 
-.page:hover,.next:hover,.last:hover.prev:hover{
+.page:hover,.next:hover,.last:hover.prev:hover,.user-edit:hover{
   opacity: 0.5;
 }
 
@@ -234,6 +234,14 @@ header{
 
 .user-edit{
 align-items: center;
+}
+
+.user-destory{
+  margin-left: 10px;
+}
+
+.user-destory:hover{
+  color: #f00;
 }
 
 .user-info{

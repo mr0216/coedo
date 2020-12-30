@@ -16,6 +16,7 @@
 
     <% if user_signed_in? && current_user.id == @user.id %>
       <%= link_to 'ユーザー編集', edit_user_path, class:"user-edit" %>
+      <%= link_to 'ユーザー削除', user_path, method: :delete, class:"user-destory" %>
     <% end %>
 
     <div class="user-info">
