@@ -195,6 +195,7 @@ header{
   padding-top: 30px;
 }
 
+
 .user-box, .users-container{
   width: 85%;
   background-color: white;
@@ -231,6 +232,10 @@ header{
   text-align: left;
 }
 
+.user-edit{
+align-items: center;
+}
+
 .user-info{
   border-top: 1px solid #ccc;
   display:flex;
@@ -259,6 +264,7 @@ header{
   text-align: center;
   padding-left: 120px;
 }
+
 
 .card-heading{
   margin: 0 40px;

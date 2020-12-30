@@ -13,6 +13,11 @@
     <div class="user-introduction">
       <p class="introduction-detail"><%= simple_format(@user.introduction) %></p>
     </div>
+
+    <% if user_signed_in? && current_user.id == @user.id %>
+      <%= link_to 'ユーザー編集', edit_user_path, class:"user-edit" %>
+    <% end %>
+
     <div class="user-info">
       <table class="detail-tabel">
         <tbody class="fistChild-lastChild">
