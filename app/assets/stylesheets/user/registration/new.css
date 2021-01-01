@@ -3,7 +3,7 @@
     font-family: 'Noto Sans JP', sans-serif;
   }
 
-.registration-main {
+.registration-main,.edit_user {
   width: 100%;
   min-width: 800px;
   padding-bottom: 70px;

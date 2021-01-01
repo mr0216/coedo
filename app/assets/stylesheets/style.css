@@ -94,6 +94,7 @@ header{
 }
 
 .main-container{
+  color: white;
   width:1170px;
   padding:0 15px;
   margin:0 auto;
@@ -169,16 +170,6 @@ header{
   text-align: center;
   font-size: 15px;
 }
-
-/* @media screen and (max-width: 960px)
-.topics-list ul li {
-  display: block;
-  float: left;
-  width: 31.33333%;
-  margin: 0 1% 30px;
-  vertical-align: top;
-  text-align: left;
-} */
 
 /* ▲posts/index */
 
