@@ -26,7 +26,7 @@ body,h1,h2,h3,label,form{
   padding: 10px 10px;
 }
 
-.page:hover,.next:hover,.last:hover.prev:hover{
+.page:hover,.next:hover,.last:hover.prev:hover,.user-edit:hover{
   opacity: 0.5;
 }
 
@@ -94,6 +94,7 @@ header{
 }
 
 .main-container{
+  color: white;
   width:1170px;
   padding:0 15px;
   margin:0 auto;
@@ -170,16 +171,6 @@ header{
   font-size: 15px;
 }
 
-/* @media screen and (max-width: 960px)
-.topics-list ul li {
-  display: block;
-  float: left;
-  width: 31.33333%;
-  margin: 0 1% 30px;
-  vertical-align: top;
-  text-align: left;
-} */
-
 /* ▲posts/index */
 
 /* ▼ユーザー詳細ページ */
@@ -194,6 +185,7 @@ header{
   justify-content: center;
   padding-top: 30px;
 }
+
 
 .user-box, .users-container{
   width: 85%;
@@ -231,6 +223,18 @@ header{
   text-align: left;
 }
 
+.user-edit{
+align-items: center;
+}
+
+.user-destory{
+  margin-left: 10px;
+}
+
+.user-destory:hover{
+  color: #f00;
+}
+
 .user-info{
   border-top: 1px solid #ccc;
   display:flex;
@@ -259,6 +263,7 @@ header{
   text-align: center;
   padding-left: 120px;
 }
+
 
 .card-heading{
   margin: 0 40px;

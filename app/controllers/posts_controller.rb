@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :authenticate_user!, except:[:index,:show]
+  before_action :authenticate_user!, except: [:index, :show]
   before_action :set_post, only: [:show, :edit, :update, :destroy]
   before_action :contributor_confirmation, only: [:edit, :destroy]
 
@@ -19,7 +19,7 @@ class PostsController < ApplicationController
     if @post.save
       redirect_to root_path
     else
-      render "posts/new"
+      render 'posts/new'
     end
   end
 
@@ -44,6 +44,7 @@ class PostsController < ApplicationController
       render root_path
     end
   end
+
   private
 
   def set_post
@@ -51,9 +52,7 @@ class PostsController < ApplicationController
   end
 
   def contributor_confirmation
-    unless @post.user_id == current_user.id
-      redirect_to root_path
-    end
+    redirect_to root_path unless @post.user_id == current_user.id
   end
 
   def post_params

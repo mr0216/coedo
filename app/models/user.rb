@@ -4,7 +4,7 @@ class User < ApplicationRecord
 
   geocoded_by :address
   after_validation :geocode, if: :address_changed?
-  
+
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
@@ -17,7 +17,7 @@ class User < ApplicationRecord
     validates :image
   end
 
-  validates :password, presence: true,format: { with: /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i, message: ' は半角英数字の両方を含めてください' }
+  validates :password, presence: true, format: { with: /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i, message: ' は半角英数字の両方を含めてください' }
   validates :category_id, numericality: { other_than: 1, message: ' を選択してください' }
 
   has_many :posts

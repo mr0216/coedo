@@ -1,10 +1,10 @@
 require 'rails_helper'
 
-RSpec.describe "ユーザー新規登録", type: :system do
+RSpec.describe 'ユーザー新規登録', type: :system do
   before do
     @user = FactoryBot.build(:user)
   end
-  context 'ユーザー新規登録ができるとき' do 
+  context 'ユーザー新規登録ができるとき' do
     it '正しい情報を入力すればユーザー新規登録ができてトップページに移動する' do
       # トップページに移動する
       visit root_path
@@ -20,16 +20,16 @@ RSpec.describe "ユーザー新規登録", type: :system do
       fill_in 'user[email]', with: @user.email
       fill_in 'user[password]', with: @user.password
       fill_in 'user[password_confirmation]', with: @user.password_confirmation
-      select  '観光地', from:'user[category_id]'
+      select  '観光地', from: 'user[category_id]'
       fill_in 'user[introduction]', with: @user.introduction
       fill_in 'user[url]', with: @user.introduction
       fill_in 'user[business_hour]', with: @user.business_hour
       fill_in 'user[address]', with: @user.address
       fill_in 'user[phone_number]', with: @user.phone_number
       # サインアップボタンを押すとユーザーモデルのカウントが1上がることを確認する
-      expect{
+      expect  do
         find('input[name="commit"]').click
-      }.to change { User.count }.by(1)
+      end.to change { User.count }.by(1)
       # トップページへ遷移する
       expect(current_path).to eq root_path
       # 新規投稿ボタン、ログアウトボタンが表示されることを確認する
@@ -56,18 +56,18 @@ RSpec.describe "ユーザー新規登録", type: :system do
       fill_in 'user[email]', with: ''
       fill_in 'user[password]', with: ''
       fill_in 'user[password_confirmation]', with: ''
-      select  '---', from:'user[category_id]'
+      select  '---', from: 'user[category_id]'
       fill_in 'user[introduction]', with: ''
       fill_in 'user[url]', with: ''
       fill_in 'user[business_hour]', with: ''
       fill_in 'user[address]', with: ''
       fill_in 'user[phone_number]', with: ''
       # サインアップボタンを押してもユーザーモデルのカウントは上がらないことを確認する
-      expect{
+      expect  do
         find('input[name="commit"]').click
-      }.to change { User.count }.by(0)
+      end.to change { User.count }.by(0)
       # 新規登録ページへ戻されることを確認する
-      expect(current_path).to eq "/users"
+      expect(current_path).to eq '/users'
     end
   end
 end
