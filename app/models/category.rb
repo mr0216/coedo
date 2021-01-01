@@ -8,10 +8,9 @@ class Category < ActiveHash::Base
     { id: 6, name: '体験' },
     { id: 7, name: 'イベント' },
     { id: 8, name: 'サービス・その他' },
-    { id: 9, name: '該当なし' },
+    { id: 9, name: '該当なし' }
   ]
   include ActiveHash::Associations
   has_many :users
   has_many :posts
 end
-

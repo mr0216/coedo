@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-  before_action :authenticate_user!, except:[:index,:show]
-  before_action :set_user, only: [:show, :edit, :update, :destroy ]
+  before_action :authenticate_user!, except: [:index, :show]
+  before_action :set_user, only: [:show, :edit, :update, :destroy]
   before_action :contributor_confirmation, only: [:edit, :destroy]
 
   def index
@@ -33,8 +33,9 @@ class UsersController < ApplicationController
   end
 
   private
+
   def user_params
-    params.require(:user).permit(:nickname,:email, :password, :password_confirmation, :category_id, :introduction, :url, :business_hour, :address, :latitude,:longitude, :phone_number, :image)
+    params.require(:user).permit(:nickname, :email, :password, :password_confirmation, :category_id, :introduction, :url, :business_hour, :address, :latitude, :longitude, :phone_number, :image)
   end
 
   def set_user
@@ -42,8 +43,6 @@ class UsersController < ApplicationController
   end
 
   def contributor_confirmation
-    unless @user.id == current_user.id
-      redirect_to action: :index
-    end
+    redirect_to action: :index unless @user.id == current_user.id
   end
 end
